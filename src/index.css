@@ -1,0 +1,102 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    box-shadow: 2px 2px 6px black;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.container:first-child{
+  padding-top: 20px;
+}
+.container:last-child{
+  padding-bottom: 20px;
+}
+.container input{
+  padding: 10px 12px;
+  width: 80%;
+ outline: none;
+ font-size: 16px;
+}
+.container button{
+  padding: 5px 20px ;
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/* .tableDiv,.tableDiv table{
+  margin: 30px auto;
+  box-shadow: 2px 2px 6px black;
+  width: 50%;
+}
+.tableDiv table{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  width: fit-content;
+} */
+
+.tableDiv table{
+  width: 50%;
+  margin: 10px auto;
+}
+.tableDiv table,tr,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 12px;
+}
+.tableDiv table th{
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+}
+.tableDiv table button{
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: rgb(255, 196, 0);
+  margin: 0 5px;
+  font-weight: bold;
+}
+.tableDiv table button:last-child{
+  background-color: red;
+  font-weight: bold;
+  color: white;
+}
+
+@media(max-width:600px){
+  .tableDiv table{
+    font-size: 12px;
+    margin: 10px auto;
+    align-items: center;
+    text-align: center;
+  }
+  .tableDiv td{
+    padding: 2px;
+  }
+  .tableDiv td button{
+    padding: 2px;
+    margin: 2px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
